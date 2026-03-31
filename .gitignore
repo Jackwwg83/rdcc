@@ -1,0 +1,15 @@
+node_modules/
+build-src/
+dist/
+
+# Auto-generated stub dirs from old build runs (not source)
+/assistant/
+/bridge/
+/coordinator/
+/proactive/
+/services/
+/skills/
+/tasks/
+/tools/
+/types/
+/utils/
