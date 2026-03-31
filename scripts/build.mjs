@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * build.mjs — Best-effort build of 睿动CLI v1.0.0 from source
+ * build.mjs — Best-effort build of Ruidong Code v1.0.0 from source
  *
  * ⚠️  IMPORTANT: A complete rebuild requires the Bun runtime's compile-time
  *     intrinsics (feature(), MACRO, bun:bundle). This script provides a
@@ -175,8 +175,8 @@ console.log(`✅ Phase 2: Transformed ${transformCount} files`)
 // PHASE 3: Create entry wrapper
 // ══════════════════════════════════════════════════════════════════════════════
 
-await writeFile(ENTRY, `// 睿动CLI v${VERSION} — built from source
-// 睿动CLI - Built from source
+await writeFile(ENTRY, `// Ruidong Code v${VERSION} — built from source
+// Ruidong Code - Built from source
 import './src/entrypoints/cli.tsx'
 `, 'utf8')
 console.log('✅ Phase 3: Created entry wrapper')
@@ -208,7 +208,7 @@ for (let round = 1; round <= MAX_ROUNDS; round++) {
       '--target=node18',
       '--format=esm',
       `--outfile="${OUT_FILE}"`,
-      `--banner:js=$'#!/usr/bin/env node\\n// 睿动CLI v${VERSION} (built from source)\\n// 睿动CLI - Built from source\\nimport { createRequire as __createRequire } from "node:module";\\nconst require = __createRequire(import.meta.url);\\n'`,
+      `--banner:js=$'#!/usr/bin/env node\\n// Ruidong Code v${VERSION} (built from source)\\n// Ruidong Code - Built from source\\nimport { createRequire as __createRequire } from "node:module";\\nconst require = __createRequire(import.meta.url);\\n'`,
       `'--tsconfig-raw=${JSON.stringify({compilerOptions:{baseUrl:".",paths:{"src/*":["build-src/src/*"]},jsx:"react-jsx"}})}'`,
       '--loader:.txt=text',
       '--loader:.md=text',
