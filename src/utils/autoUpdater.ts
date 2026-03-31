@@ -79,11 +79,11 @@ export async function assertMinVersion(): Promise<void> {
 
     if (
       versionConfig.minVersion &&
-      lt('1.0.0', versionConfig.minVersion)
+      lt('2.1.88', versionConfig.minVersion)
     ) {
       // biome-ignore lint/suspicious/noConsole:: intentional console output
       console.error(`
-It looks like your version of Claude Code (${'1.0.0'}) needs an update.
+It looks like your version of Claude Code (${'2.1.88'}) needs an update.
 A newer version (${versionConfig.minVersion} or higher) is required to continue.
 
 To update, please run:

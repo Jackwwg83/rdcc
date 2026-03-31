@@ -150,7 +150,7 @@ function isAnyTracingEnabled(): boolean {
 }
 
 function getTracer() {
-  return trace.getTracer('com.anthropic.claude_code.tracing', '1.0.0')
+  return trace.getTracer('com.anthropic.claude_code.tracing', '2.1.88')
 }
 
 function createSpanAttributes(

@@ -15,7 +15,7 @@ export function shouldShowUpdateNotification(
 
 export function useUpdateNotification(
   updatedVersion: string | null | undefined,
-  initialVersion: string = '1.0.0',
+  initialVersion: string = '2.1.88',
 ): string | null {
   const [lastNotifiedSemver, setLastNotifiedSemver] = useState<string | null>(
     () => getSemverPart(initialVersion),

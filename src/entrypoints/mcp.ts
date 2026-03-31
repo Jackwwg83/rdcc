@@ -47,7 +47,7 @@ export async function startMCPServer(
   const server = new Server(
     {
       name: 'claude/tengu',
-      version: '1.0.0',
+      version: '2.1.88',
     },
     {
       capabilities: {

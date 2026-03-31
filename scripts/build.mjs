@@ -25,7 +25,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..')
-const VERSION = '1.0.0'
+const VERSION = '2.1.88'
 const BUILD = join(ROOT, 'build-src')
 const ENTRY = join(BUILD, 'entry.ts')
 
@@ -213,12 +213,11 @@ for (let round = 1; round <= MAX_ROUNDS; round++) {
       '--loader:.txt=text',
       '--loader:.md=text',
       "'--external:bun:*'",
-      "'--external:@ant/*'",
       "'--external:@anthropic-ai/sandbox-runtime'",
       "'--external:@anthropic-ai/mcpb'",
       "'--external:@anthropic-ai/foundry-sdk'",
-      "'--external:color-diff-napi'",
-      "'--external:modifiers-napi'",
+      '--external:modifiers-napi',
+      '--external:image-processor-napi',
       '--external:jsonc-parser',
       '--external:@opentelemetry/exporter-logs-otlp-grpc',
       '--external:@opentelemetry/exporter-logs-otlp-proto',

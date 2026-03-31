@@ -92,7 +92,7 @@ export function LogoV2() {
   if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
     t2 = () => {
       const currentConfig = getGlobalConfig();
-      if (currentConfig.lastReleaseNotesSeen === '1.0.0') {
+      if (currentConfig.lastReleaseNotesSeen === '2.1.88') {
         return;
       }
       saveGlobalConfig(_temp3);
@@ -526,12 +526,12 @@ export function LogoV2() {
   return t41;
 }
 function _temp3(current) {
-  if (current.lastReleaseNotesSeen === '1.0.0') {
+  if (current.lastReleaseNotesSeen === '2.1.88') {
     return current;
   }
   return {
     ...current,
-    lastReleaseNotesSeen: '1.0.0'
+    lastReleaseNotesSeen: '2.1.88'
   };
 }
 function _temp2(s_0) {

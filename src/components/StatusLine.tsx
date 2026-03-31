@@ -76,7 +76,7 @@ function buildStatusLineCommandInput(permissionMode: PermissionMode, exceeds200k
       project_dir: getOriginalCwd(),
       added_dirs: addedDirs
     },
-    version: '1.0.0',
+    version: '2.1.88',
     output_style: {
       name: outputStyleName
     },

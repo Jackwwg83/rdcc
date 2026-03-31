@@ -1623,7 +1623,7 @@ export function Config({
           channel: channel as AnalyticsMetadata_I_VERIFIED_THIS_IS_NOT_CODE_OR_FILEPATHS
         });
       }} />}
-        </Dialog> : showSubmenu === 'ChannelDowngrade' ? <ChannelDowngradeDialog currentVersion={'1.0.0'} onChoice={(choice: ChannelDowngradeChoice) => {
+        </Dialog> : showSubmenu === 'ChannelDowngrade' ? <ChannelDowngradeDialog currentVersion={'2.1.88'} onChoice={(choice: ChannelDowngradeChoice) => {
       setShowSubmenu(null);
       setTabsHidden(false);
       if (choice === 'cancel') {
@@ -1640,7 +1640,7 @@ export function Config({
       };
       if (choice === 'stay') {
         // User wants to stay on current version until stable catches up
-        newSettings.minimumVersion = '1.0.0';
+        newSettings.minimumVersion = '2.1.88';
       }
       updateSettingsForSource('userSettings', newSettings);
       setSettingsData(prev_27 => ({
