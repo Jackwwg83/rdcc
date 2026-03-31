@@ -515,9 +515,9 @@ async function updateLatest(
         `Native installer: maxVersion ${maxVersion} is set, capping update from ${version} to ${maxVersion}`,
       )
       // If we're already at or above maxVersion, skip the update entirely
-      if (gte('2.1.88', maxVersion)) {
+      if (gte('1.0.0', maxVersion)) {
         logForDebugging(
-          `Native installer: current version ${'2.1.88'} is already at or above maxVersion ${maxVersion}, skipping update`,
+          `Native installer: current version ${'1.0.0'} is already at or above maxVersion ${maxVersion}, skipping update`,
         )
         logEvent('tengu_native_update_skipped_max_version', {
           latency_ms: Date.now() - startTime,

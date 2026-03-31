@@ -29,7 +29,7 @@ import { getInitialSettings } from 'src/utils/settings/settings.js'
 
 export async function update() {
   logEvent('tengu_update_check', {})
-  writeToStdout(`Current version: ${'2.1.88'}\n`)
+  writeToStdout(`Current version: ${'1.0.0'}\n`)
 
   const channel = getInitialSettings()?.autoUpdatesChannel ?? 'latest'
   writeToStdout(`Checking for updates to ${channel} version...\n`)
@@ -122,8 +122,8 @@ export async function update() {
     if (packageManager === 'homebrew') {
       writeToStdout('Claude is managed by Homebrew.\n')
       const latest = await getLatestVersion(channel)
-      if (latest && !gte('2.1.88', latest)) {
-        writeToStdout(`Update available: ${'2.1.88'} → ${latest}\n`)
+      if (latest && !gte('1.0.0', latest)) {
+        writeToStdout(`Update available: ${'1.0.0'} → ${latest}\n`)
         writeToStdout('\n')
         writeToStdout('To update, run:\n')
         writeToStdout(chalk.bold('  brew upgrade claude-code') + '\n')
@@ -133,8 +133,8 @@ export async function update() {
     } else if (packageManager === 'winget') {
       writeToStdout('Claude is managed by winget.\n')
       const latest = await getLatestVersion(channel)
-      if (latest && !gte('2.1.88', latest)) {
-        writeToStdout(`Update available: ${'2.1.88'} → ${latest}\n`)
+      if (latest && !gte('1.0.0', latest)) {
+        writeToStdout(`Update available: ${'1.0.0'} → ${latest}\n`)
         writeToStdout('\n')
         writeToStdout('To update, run:\n')
         writeToStdout(
@@ -146,8 +146,8 @@ export async function update() {
     } else if (packageManager === 'apk') {
       writeToStdout('Claude is managed by apk.\n')
       const latest = await getLatestVersion(channel)
-      if (latest && !gte('2.1.88', latest)) {
-        writeToStdout(`Update available: ${'2.1.88'} → ${latest}\n`)
+      if (latest && !gte('1.0.0', latest)) {
+        writeToStdout(`Update available: ${'1.0.0'} → ${latest}\n`)
         writeToStdout('\n')
         writeToStdout('To update, run:\n')
         writeToStdout(chalk.bold('  apk upgrade claude-code') + '\n')
@@ -236,14 +236,14 @@ export async function update() {
         await gracefulShutdown(1)
       }
 
-      if (result.latestVersion === '2.1.88') {
+      if (result.latestVersion === '1.0.0') {
         writeToStdout(
-          chalk.green(`Claude Code is up to date (${'2.1.88'})`) + '\n',
+          chalk.green(`Claude Code is up to date (${'1.0.0'})`) + '\n',
         )
       } else {
         writeToStdout(
           chalk.green(
-            `Successfully updated from ${'2.1.88'} to version ${result.latestVersion}`,
+            `Successfully updated from ${'1.0.0'} to version ${result.latestVersion}`,
           ) + '\n',
         )
         await regenerateCompletionCache()
@@ -306,15 +306,15 @@ export async function update() {
   }
 
   // Check if versions match exactly, including any build metadata (like SHA)
-  if (latestVersion === '2.1.88') {
+  if (latestVersion === '1.0.0') {
     writeToStdout(
-      chalk.green(`Claude Code is up to date (${'2.1.88'})`) + '\n',
+      chalk.green(`Claude Code is up to date (${'1.0.0'})`) + '\n',
     )
     await gracefulShutdown(0)
   }
 
   writeToStdout(
-    `New version available: ${latestVersion} (current: ${'2.1.88'})\n`,
+    `New version available: ${latestVersion} (current: ${'1.0.0'})\n`,
   )
   writeToStdout('Installing update...\n')
 
@@ -374,7 +374,7 @@ export async function update() {
     case 'success':
       writeToStdout(
         chalk.green(
-          `Successfully updated from ${'2.1.88'} to version ${latestVersion}`,
+          `Successfully updated from ${'1.0.0'} to version ${latestVersion}`,
         ) + '\n',
       )
       await regenerateCompletionCache()

@@ -299,7 +299,7 @@ export function createBridgeLogger(options: {
       regenerateQr(connectUrl)
 
       if (verbose) {
-        write(chalk.dim(`Remote Control`) + ` v${'2.1.88'}\n`)
+        write(chalk.dim(`Remote Control`) + ` v${'1.0.0'}\n`)
       }
       if (verbose) {
         if (config.spawnMode !== 'single-session') {

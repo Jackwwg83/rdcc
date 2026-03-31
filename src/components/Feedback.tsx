@@ -211,7 +211,7 @@ export function Feedback({
       platform: env.platform,
       gitRepo: envInfo.isGit,
       terminal: env.terminal,
-      version: '2.1.88',
+      version: '1.0.0',
       transcript: normalizeMessagesForAPI(messages),
       errors: sanitizedErrors,
       lastApiRequest: getLastAPIRequest(),
@@ -343,7 +343,7 @@ export function Feedback({
             <Text>
               - Environment info:{' '}
               <Text dimColor>
-                {env.platform}, {env.terminal}, v{'2.1.88'}
+                {env.platform}, {env.terminal}, v{'1.0.0'}
               </Text>
             </Text>
             {envInfo.gitState && <Text>

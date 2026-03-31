@@ -342,7 +342,7 @@ export function initialize1PEventLogging(): void {
   const platform = getPlatform()
   const attributes: Record<string, string> = {
     [ATTR_SERVICE_NAME]: 'claude-code',
-    [ATTR_SERVICE_VERSION]: '2.1.88',
+    [ATTR_SERVICE_VERSION]: '1.0.0',
   }
 
   // Add WSL-specific attributes if running on WSL
@@ -384,7 +384,7 @@ export function initialize1PEventLogging(): void {
   // separate and used for customer telemetry.
   firstPartyEventLogger = firstPartyEventLoggerProvider.getLogger(
     'com.anthropic.claude_code.events',
-    '2.1.88',
+    '1.0.0',
   )
 }
 

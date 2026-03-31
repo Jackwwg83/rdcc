@@ -37,17 +37,17 @@ export function PackageManagerAutoUpdater(t0) {
       const maxVersion = await getMaxVersion();
       if (maxVersion && latest && gt(latest, maxVersion)) {
         logForDebugging(`PackageManagerAutoUpdater: maxVersion ${maxVersion} is set, capping update from ${latest} to ${maxVersion}`);
-        if (gte('2.1.88', maxVersion)) {
-          logForDebugging(`PackageManagerAutoUpdater: current version ${'2.1.88'} is already at or above maxVersion ${maxVersion}, skipping update`);
+        if (gte('1.0.0', maxVersion)) {
+          logForDebugging(`PackageManagerAutoUpdater: current version ${'1.0.0'} is already at or above maxVersion ${maxVersion}, skipping update`);
           setUpdateAvailable(false);
           return;
         }
         latest = maxVersion;
       }
-      const hasUpdate = latest && !gte('2.1.88', latest) && !shouldSkipVersion(latest);
+      const hasUpdate = latest && !gte('1.0.0', latest) && !shouldSkipVersion(latest);
       setUpdateAvailable(!!hasUpdate);
       if (hasUpdate) {
-        logForDebugging(`PackageManagerAutoUpdater: Update available ${'2.1.88'} -> ${latest}`);
+        logForDebugging(`PackageManagerAutoUpdater: Update available ${'1.0.0'} -> ${latest}`);
       }
     };
     $[0] = t1;
@@ -76,7 +76,7 @@ export function PackageManagerAutoUpdater(t0) {
   const updateCommand = packageManager === "homebrew" ? "brew upgrade claude-code" : packageManager === "winget" ? "winget upgrade Anthropic.ClaudeCode" : packageManager === "apk" ? "apk upgrade claude-code" : "your package manager update command";
   let t4;
   if ($[3] !== verbose) {
-    t4 = verbose && <Text dimColor={true} wrap="truncate">currentVersion: {'2.1.88'}</Text>;
+    t4 = verbose && <Text dimColor={true} wrap="truncate">currentVersion: {'1.0.0'}</Text>;
     $[3] = verbose;
     $[4] = t4;
   } else {

@@ -365,7 +365,7 @@ export const getClaudeTempDir = memoize(function getClaudeTempDir(): string {
 export const getBundledSkillsRoot = memoize(
   function getBundledSkillsRoot(): string {
     const nonce = randomBytes(16).toString('hex')
-    return join(getClaudeTempDir(), 'bundled-skills', '2.1.88', nonce)
+    return join(getClaudeTempDir(), 'bundled-skills', '1.0.0', nonce)
   },
 )
 

@@ -319,7 +319,7 @@ export async function initBridgeCore(
   const rawApi = createBridgeApiClient({
     baseUrl,
     getAccessToken,
-    runnerVersion: '2.1.88',
+    runnerVersion: '1.0.0',
     onDebug: logForDebugging,
     onAuth401,
     getTrustedDeviceToken,
