@@ -110,7 +110,7 @@ export class PaneBackendExecutor implements TeammateExecutor {
         await this.backend.enablePaneBorderStatus()
       }
 
-      // Build the command to spawn Ruidong Code with teammate identity
+      // Build the command to spawn rdcc with teammate identity
       const binaryPath = getTeammateCommand()
 
       // Build teammate identity CLI args

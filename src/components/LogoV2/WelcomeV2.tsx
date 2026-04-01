@@ -9,7 +9,7 @@ export function WelcomeV2() {
   if (env.terminal === "Apple_Terminal") {
     let t0;
     if ($[0] !== theme) {
-      t0 = <AppleTerminalWelcomeV2 theme={theme} welcomeMessage="欢迎使用Ruidong Code" />;
+      t0 = <AppleTerminalWelcomeV2 theme={theme} welcomeMessage="欢迎使用rdcc" />;
       $[0] = theme;
       $[1] = t0;
     } else {
@@ -28,7 +28,7 @@ export function WelcomeV2() {
     let t7;
     let t8;
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
-      t0 = <Text><Text color="claude">{"欢迎使用Ruidong Code"} </Text><Text dimColor={true}>v{'1.0.0'} </Text></Text>;
+      t0 = <Text><Text color="claude">{"欢迎使用rdcc"} </Text><Text dimColor={true}>v{'1.0.0'} </Text></Text>;
       t1 = <Text>{"\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026"}</Text>;
       t2 = <Text>{"                                                          "}</Text>;
       t3 = <Text>{"                                                          "}</Text>;
@@ -113,7 +113,7 @@ export function WelcomeV2() {
   let t5;
   let t6;
   if ($[18] === Symbol.for("react.memo_cache_sentinel")) {
-    t0 = <Text><Text color="claude">{"欢迎使用Ruidong Code"} </Text><Text dimColor={true}>v{'1.0.0'} </Text></Text>;
+    t0 = <Text><Text color="claude">{"欢迎使用rdcc"} </Text><Text dimColor={true}>v{'1.0.0'} </Text></Text>;
     t1 = <Text>{"\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026"}</Text>;
     t2 = <Text>{"                                                          "}</Text>;
     t3 = <Text>{"     *                                       \u2588\u2588\u2588\u2588\u2588\u2593\u2593\u2591     "}</Text>;

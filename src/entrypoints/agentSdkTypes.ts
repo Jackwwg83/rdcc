@@ -1,5 +1,5 @@
 /**
- * Main entrypoint for Ruidong Code Agent SDK types.
+ * Main entrypoint for rdcc Agent SDK types.
  *
  * This file re-exports the public SDK API from:
  * - sdk/coreTypes.ts - Common serializable types (messages, configs)

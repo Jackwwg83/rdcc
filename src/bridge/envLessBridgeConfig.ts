@@ -147,7 +147,7 @@ export async function getEnvLessBridgeConfig(): Promise<EnvLessBridgeConfig> {
 export async function checkEnvLessBridgeMinVersion(): Promise<string | null> {
   const cfg = await getEnvLessBridgeConfig()
   if (cfg.min_version && lt('2.1.88', cfg.min_version)) {
-    return `Your version of Ruidong Code (${'2.1.88'}) is too old for Remote Control.\nVersion ${cfg.min_version} or higher is required. Run \`claude update\` to update.`
+    return `Your version of rdcc (${'2.1.88'}) is too old for Remote Control.\nVersion ${cfg.min_version} or higher is required. Run \`claude update\` to update.`
   }
   return null
 }

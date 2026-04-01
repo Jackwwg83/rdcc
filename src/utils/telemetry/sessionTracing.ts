@@ -1,8 +1,8 @@
 /**
- * Session Tracing for Ruidong Code using OpenTelemetry (BETA)
+ * Session Tracing for rdcc using OpenTelemetry (BETA)
  *
  * This module provides a high-level API for creating and managing spans
- * to trace Ruidong Code workflows. Each user interaction creates a root
+ * to trace rdcc workflows. Each user interaction creates a root
  * interaction span, which contains operation spans (LLM requests, tool calls, etc.).
  *
  * Requirements:

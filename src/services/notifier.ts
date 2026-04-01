@@ -35,7 +35,7 @@ export async function sendNotification(
   })
 }
 
-const DEFAULT_TITLE = 'Ruidong Code'
+const DEFAULT_TITLE = 'rdcc'
 
 async function sendToChannel(
   channel: string,

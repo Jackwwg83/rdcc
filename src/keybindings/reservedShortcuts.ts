@@ -11,7 +11,7 @@ export type ReservedShortcut = {
 }
 
 /**
- * Shortcuts that cannot be rebound - they are hardcoded in Ruidong Code.
+ * Shortcuts that cannot be rebound - they are hardcoded in rdcc.
  */
 export const NON_REBINDABLE: ReservedShortcut[] = [
   {

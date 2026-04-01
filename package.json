@@ -1,7 +1,7 @@
 {
   "name": "rdcc",
   "version": "1.0.0",
-  "description": "睿动CLI (rdcc) — AI-powered coding assistant",
+  "description": "rdcc — AI-powered coding assistant",
   "type": "module",
   "license": "MIT",
   "bin": {

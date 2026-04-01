@@ -128,16 +128,16 @@ export type ToolUseConfirm<Input extends AnyObject = AnyObject> = {
 function getNotificationMessage(toolUseConfirm: ToolUseConfirm): string {
   const toolName = toolUseConfirm.tool.userFacingName(toolUseConfirm.input as never);
   if (toolUseConfirm.tool === ExitPlanModeV2Tool) {
-    return 'Ruidong Code needs your approval for the plan';
+    return 'rdcc needs your approval for the plan';
   }
   if (toolUseConfirm.tool === EnterPlanModeTool) {
-    return 'Ruidong Code wants to enter plan mode';
+    return 'rdcc wants to enter plan mode';
   }
   if (feature('REVIEW_ARTIFACT') && toolUseConfirm.tool === ReviewArtifactTool) {
     return 'Claude needs your approval for a review artifact';
   }
   if (!toolName || toolName.trim() === '') {
-    return 'Ruidong Code needs your attention';
+    return 'rdcc needs your attention';
   }
   return `Claude needs your permission to use ${toolName}`;
 }

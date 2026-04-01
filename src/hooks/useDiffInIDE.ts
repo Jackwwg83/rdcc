@@ -60,7 +60,7 @@ export function useDiffInIDE({
 
   const sha = useMemo(() => randomUUID().slice(0, 6), [])
   const tabName = useMemo(
-    () => `✻ [Ruidong Code] ${basename(filePath)} (${sha}) ⧉`,
+    () => `✻ [rdcc] ${basename(filePath)} (${sha}) ⧉`,
     [filePath, sha],
   )
 

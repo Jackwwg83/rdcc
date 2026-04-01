@@ -6,7 +6,7 @@ export default {
   type: 'local-jsx',
   name: 'model',
   get description() {
-    return `Set the AI model for Ruidong Code (currently ${renderModelName(getMainLoopModel())})`
+    return `Set the AI model for rdcc (currently ${renderModelName(getMainLoopModel())})`
   },
   argumentHint: '[model]',
   get immediate() {

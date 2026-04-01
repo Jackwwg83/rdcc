@@ -730,7 +730,7 @@ export function buildPlanApprovalOptions({
   });
   if (showUltraplan) {
     options.push({
-      label: 'No, refine with Ultraplan on Ruidong Code on the web',
+      label: 'No, refine with Ultraplan on rdcc on the web',
       value: 'ultraplan'
     });
   }

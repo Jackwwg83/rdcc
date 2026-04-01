@@ -224,7 +224,7 @@ export const KeybindingsSchema = lazySchema(() =>
         .describe('Array of keybinding blocks by context'),
     })
     .describe(
-      'Ruidong Code keybindings configuration. Customize keyboard shortcuts by context.',
+      'rdcc keybindings configuration. Customize keyboard shortcuts by context.',
     ),
 )
 

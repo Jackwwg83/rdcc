@@ -1,4 +1,4 @@
-# rdcc — Ruidong Code
+# rdcc — rdcc
 
 An AI-powered coding assistant CLI that supports multiple model providers via the Anthropic Messages API protocol.
 

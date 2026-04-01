@@ -263,7 +263,7 @@ function getUserSnapshotContent(configFile: string): string {
 }
 
 /**
- * Generates Ruidong Code specific snapshot content
+ * Generates rdcc specific snapshot content
  * This content is always included regardless of user configuration
  */
 async function getClaudeCodeSnapshotContent(): Promise<string> {
@@ -350,7 +350,7 @@ async function getSnapshotScript(
   const configFile = getConfigFile(shellPath)
   const isZsh = configFile.endsWith('.zshrc')
 
-  // Generate the user content and Ruidong Code content
+  // Generate the user content and rdcc content
   const userContent = configFileExists
     ? getUserSnapshotContent(configFile)
     : !isZsh
@@ -429,7 +429,7 @@ export const createAndSaveSnapshot = async (
 
       if (!configFileExists) {
         logForDebugging(
-          `Shell config file not found: ${configFile}, creating snapshot with Ruidong Code defaults only`,
+          `Shell config file not found: ${configFile}, creating snapshot with rdcc defaults only`,
         )
       }
 

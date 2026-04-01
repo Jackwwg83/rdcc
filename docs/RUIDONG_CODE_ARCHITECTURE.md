@@ -1,4 +1,4 @@
-# Ruidong Code — 总体架构设计
+# rdcc — 总体架构设计
 
 > PM: Claude (rdcc 主会话) | 开发: Codex (opencc 实现)
 > 基线: Codex 产品计划 `RUIDONG_CODE_PRODUCT_PLAN_CN.md` 阶段 0-2 已完成

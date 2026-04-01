@@ -761,7 +761,7 @@ function PromptInput({
     if (feature('ULTRAPLAN') && ultraplanTriggers.length) {
       addNotification({
         key: 'ultraplan-active',
-        text: 'This prompt will launch an ultraplan session in Ruidong Code on the web',
+        text: 'This prompt will launch an ultraplan session in rdcc on the web',
         priority: 'immediate',
         timeoutMs: 5000
       });

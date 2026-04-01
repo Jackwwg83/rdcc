@@ -42,7 +42,7 @@ type LoadingStateProps = {
  * <LoadingState
  *   message="Loading sessions"
  *   bold
- *   subtitle="Fetching your Ruidong Code sessions..."
+ *   subtitle="Fetching your rdcc sessions..."
  * />
  */
 export function LoadingState(t0) {

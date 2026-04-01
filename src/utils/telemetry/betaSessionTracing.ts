@@ -1,5 +1,5 @@
 /**
- * Beta Session Tracing for Ruidong Code
+ * Beta Session Tracing for rdcc
  *
  * This module contains beta tracing features enabled when
  * ENABLE_BETA_TRACING_DETAILED=1 and BETA_TRACING_ENDPOINT are set.

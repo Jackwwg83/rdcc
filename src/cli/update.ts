@@ -238,7 +238,7 @@ export async function update() {
 
       if (result.latestVersion === '2.1.88') {
         writeToStdout(
-          chalk.green(`Ruidong Code is up to date (${'2.1.88'})`) + '\n',
+          chalk.green(`rdcc is up to date (${'2.1.88'})`) + '\n',
         )
       } else {
         writeToStdout(
@@ -308,7 +308,7 @@ export async function update() {
   // Check if versions match exactly, including any build metadata (like SHA)
   if (latestVersion === '2.1.88') {
     writeToStdout(
-      chalk.green(`Ruidong Code is up to date (${'2.1.88'})`) + '\n',
+      chalk.green(`rdcc is up to date (${'2.1.88'})`) + '\n',
     )
     await gracefulShutdown(0)
   }

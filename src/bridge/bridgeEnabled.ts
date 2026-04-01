@@ -166,7 +166,7 @@ export function checkBridgeMinVersion(): string | null {
       minVersion: string
     }>('tengu_bridge_min_version', { minVersion: '0.0.0' })
     if (config.minVersion && lt('2.1.88', config.minVersion)) {
-      return `Your version of Ruidong Code (${'2.1.88'}) is too old for Remote Control.\nVersion ${config.minVersion} or higher is required. Run \`claude update\` to update.`
+      return `Your version of rdcc (${'2.1.88'}) is too old for Remote Control.\nVersion ${config.minVersion} or higher is required. Run \`claude update\` to update.`
     }
   }
   return null
