@@ -1,3 +1,4 @@
-// Auto-generated stub
-export default function bun_bundle() {}
-export const bun_bundle = () => {}
+// Stub for bun:bundle — feature() is compile-time in Bun
+export function feature(_flag) {
+  return false
+}

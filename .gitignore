@@ -14,3 +14,9 @@ dist/
 /types/
 /utils/
 .DS_Store
+
+# Environment / secrets
+.env
+.env.local
+.env.*
+*.pem

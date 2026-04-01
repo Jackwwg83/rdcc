@@ -23,7 +23,7 @@ An AI-powered coding assistant CLI that supports multiple model providers via th
 ### Install from source
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/rdcc.git
+git clone https://github.com/Jackwwg83/rdcc.git
 cd rdcc
 npm install
 npm run build
