@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "睿动CLI (rdcc) — AI-powered coding assistant",
   "type": "module",
-  "private": true,
+  "license": "MIT",
   "bin": {
     "rdcc": "dist/cli.js"
   },

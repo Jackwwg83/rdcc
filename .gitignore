@@ -13,3 +13,4 @@ dist/
 /tools/
 /types/
 /utils/
+.DS_Store
